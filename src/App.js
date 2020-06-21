@@ -1,25 +1,21 @@
 import React from 'react'
 import { hot } from 'react-hot-loader/root'
-import Form from './components/Form'
+import { LoanApplicationForm } from './forms/LoanApplicationForm'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 
 class App extends React.Component {
   render() {
     return (
       <Router>
-        <Router>
-          <nav>
-            <li>
-              <Link to="/form">contact</Link>
-            </li>
-          </nav>
+        <nav>
+          <li>
+            <Link to="/form">contact</Link>
+          </li>
+        </nav>
 
-          <Switch>
-            <Route path="/form">
-              <Form />
-            </Route>
-          </Switch>
-        </Router>
+        <Switch>
+          <Route exact path="/form" component={LoanApplicationForm} />
+        </Switch>
       </Router>
     )
   }
