@@ -25,19 +25,8 @@ const config = {
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
       {
-        test: /\.svg$/,
-        use: 'file-loader',
-      },
-      {
-        test: /\.png$/,
-        use: [
-          {
-            loader: 'url-loader',
-            options: {
-              mimetype: 'image/png',
-            },
-          },
-        ],
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        loader: 'file-loader?name=/assets/images/[name].[ext]',
       },
     ],
   },
