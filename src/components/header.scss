@@ -51,30 +51,8 @@
         }
     }
 
-    .cta-wrapper {
-        position: relative;
-
-        .underscore--link {
-            position: relative;
-            color: white;
-            padding: 3px 10px;
-            font-size: 22px;
-            text-decoration: none;
-            text-transform: lowercase;
-
-            &::before {
-                content: "";
-                position: absolute;
-                display: block;
-                background-color: lightskyblue;
-                width: 100%;
-                height: 10px;
-                z-index: -1;
-                left: 0;
-                bottom: 0;
-                transform: rotate(1deg);
-            }
-        }
+    .underscore--link {
+        color: white !important;
     }
 
     .nav {
@@ -128,7 +106,7 @@
     &.dark {
         .header--inner {
             background-color: white;
-            border-bottom: 1px solid #000;
+            box-shadow: 0 2px 7px #c1c1c1;
         }
 
         .logo {
