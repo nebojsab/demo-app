@@ -18,7 +18,7 @@
 
     .hero--img {
         height: 100vh;
-        background-image: url(/assets/images/walk_in_the_park.svg);
+        background-image: url('./assets/images/walk_in_the_park.svg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -103,7 +103,7 @@
 
     &.light {
         .logo {
-            background-image: url(/assets/images/logo-dark.png);
+            background-image: url('./assets/images/logo-dark.png');
             transition: all ease-in-out 0.1s;
         }
 
@@ -120,7 +120,7 @@
         }
 
         .logo {
-            background-image: url(/assets/images/logo.png);
+            background-image: url('./assets/images/logo.png');
             transition: all ease-in-out 0.1s;
         }
 

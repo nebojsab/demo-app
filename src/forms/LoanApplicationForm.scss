@@ -13,7 +13,7 @@
         display: block;
         width: 60%;
         height: 350px;
-        background-image: url(/assets/images/form.svg);
+        background-image: url("./assets/images/form.svg");
         background-repeat: no-repeat;
         background-size: contain;
         margin: 0 auto 80px;
@@ -23,7 +23,7 @@
         display: block;
         width: 60%;
         height: 350px;
-        background-image: url(/assets/images/msg-sent.svg);
+        background-image: url("./assets/images/msg-sent.svg");
         background-repeat: no-repeat;
         background-size: contain;
         margin: 0 auto 80px;

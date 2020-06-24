@@ -21,7 +21,7 @@
             background-size: cover;
             width: 268px;
             height: 100px;
-            background-image: url(/assets/images/logo-dark.png);
+            background-image: url("./assets/images/logo-dark.png");
         }
 
         .footer--copy {
@@ -57,7 +57,7 @@
                     width: 35px;
                     height: 35px;
                     content: "";
-                    background-image: url(/assets/images/email.svg);
+                    background-image: url("./assets/images/email.svg");
                     background-repeat: no-repeat;
                     background-size: contain;
                 }
@@ -73,7 +73,7 @@
                     width: 35px;
                     height: 35px;
                     content: "";
-                    background-image: url(/assets/images/phone.svg);
+                    background-image: url("./assets/images/phone.svg");
                     background-repeat: no-repeat;
                     background-size: contain;
                 }
