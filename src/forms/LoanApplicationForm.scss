@@ -1,0 +1,104 @@
+.loan--app-form {
+    display: block;
+    position: relative;
+    padding: 70px 0;
+    width: 100%;
+    max-width: 900px;
+    margin: 180px auto 100px;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 10px 80px #c1c1c1;
+
+    .form--img {
+        display: block;
+        width: 60%;
+        height: 350px;
+        background-image: url(/assets/images/form.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 0 auto 80px;
+    }
+
+    .form--img-sent {
+        display: block;
+        width: 60%;
+        height: 350px;
+        background-image: url(/assets/images/msg-sent.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 0 auto 80px;
+    }
+
+    h1 {
+        font-size: 36px;
+        margin: 50px auto;
+        display: block;
+        text-align: center;
+    }
+
+    .section--form-wrap {
+        display: flex;
+        align-items: flex-start;
+
+        .section--form-first {
+            width: calc(100% - 60px);
+            padding: 0 15px 0 45px;
+        }
+
+        .section--form-second {
+            width: calc(100% - 60px);
+            padding: 0 45px 0 15px;
+        }
+
+        label {
+            margin: 0 0 30px;
+            display: block;
+        }
+
+        .form-element .error {
+            color: #6c63ff;
+            font-weight: 700;
+        }
+
+        .input-wrapper,
+        .select-wrapper,
+        .phoneInput-wrapper,
+        .datePicker-wrapper {
+            .label {
+                color: #777;
+            }
+        }
+
+        .input-wrapper::before,
+        .select-wrapper::before,
+        .phoneInput-wrapper::before,
+        .datePicker-wrapper::before {
+            border-bottom-color: #c1c1c1 !important;
+        }
+
+        .input-wrapper:hover::before,
+        .select-wrapper:hover::before,
+        .phoneInput-wrapper:hover::before,
+        .datePicker-wrapper:hover::before {
+            border-bottom-color: #6c63ff !important;
+        }
+    }
+
+    .button {
+        display: block;
+        max-width: 300px;
+        margin: 80px auto;
+        position: relative;
+        background-color: #6c63ff;
+
+        &:hover {
+            background-color: #575a89;
+        }
+
+        .button--spinner {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+    }
+}
