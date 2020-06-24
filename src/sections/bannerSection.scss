@@ -1,3 +1,5 @@
+@import "../helpers/breakpoints";
+
 .banner--section {
     position: relative;
     width: 100%;
@@ -14,6 +16,10 @@
         flex-direction: row-reverse;
         justify-content: space-between;
         align-items: center;
+
+        @include breakpoint(xs) {
+            flex-direction: column;
+        }
     }
 
     &-image {
@@ -24,6 +30,10 @@
         background-repeat: no-repeat;
         background-size: auto;
         background-position: center center;
+
+        @include breakpoint(xs) {
+            height: 190px;
+        }
     }
 
     &-text {
@@ -32,15 +42,27 @@
         width: 100%;
         color: white;
 
+        @include breakpoint(xs) {
+            margin-left: 0;
+        }
+
         h2 {
             font-size: 30px;
             font-weight: 700;
+
+            @include breakpoint(xs) {
+                margin-left: 20px;
+            }
         }
 
         p {
             font-size: 20px;
             line-height: 28px;
             font-weight: 300;
+
+            @include breakpoint(xs) {
+                margin-left: 20px;
+            }
         }
     }
 }

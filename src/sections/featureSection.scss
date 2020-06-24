@@ -1,3 +1,5 @@
+@import "../helpers/breakpoints";
+
 .feature--section {
     display: flex;
     flex-direction: column;
@@ -10,11 +12,27 @@
     h1 {
         font-size: 36px;
         margin: 50px auto 80px;
+
+        @include breakpoint(xs) {
+            font-size: 28px;
+            text-align: center;
+        }
+
+        @include breakpoint(sm) {
+            font-size: 32px;
+        }
     }
 
     &-inner {
         display: flex;
         flex-wrap: wrap;
+
+        @include breakpoint(xs) {
+            flex-wrap: nowrap;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+        }
 
         .feature--card {
             display: flex;
@@ -26,8 +44,35 @@
             min-height: 450px;
             margin-bottom: 80px;
 
+            @include breakpoint(xs) {
+                width: 100%;
+                min-height: 330px;
+                margin-bottom: 40px;
+                padding-bottom: 40px;
+                border-bottom: 3px solid lightskyblue;
+
+                &:last-of-type {
+                    border-bottom: none;
+                }
+            }
+
+            @include breakpoint(sm) {
+                text-align: center;
+            }
+
             img {
                 width: 65%;
+            }
+
+            .feature--info {
+                @include breakpoint(xs) {
+                    h2 {
+                        text-align: center;
+                    }
+                    p {
+                        text-align: center;
+                    }
+                }
             }
         }
     }
