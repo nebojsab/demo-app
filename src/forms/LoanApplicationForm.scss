@@ -21,6 +21,11 @@
         width: 90%;
     }
 
+    .react-formik-ui .form-element {
+        margin-bottom: 0 !important;
+        padding-bottom: 30px !important;
+    }
+
     .form--img {
         display: block;
         width: 60%;
@@ -96,8 +101,9 @@
         }
 
         .form-element .error {
-            color: #6c63ff;
+            color: #6c63ff !important;
             font-weight: 700;
+            position: absolute;
 
             @include breakpoint(xs) {
                 color: #6c63ff !important;
